@@ -38,6 +38,8 @@ Open the [Amazon Scraper Extension Page](https://stevegates24.github.io/amazon_s
 
 Available on [Firefox Add-ons](https://addons.mozilla.org/en-US/firefox/) — search **Amazon Product Scraper** by Steve Gates.
 
+For FireFox (Dev install):[Download Extension File](https://github.com/Stevegates24/amazon_scrapper/raw/FireFox-(Dev-Install)/amazon_product_scraper-1.0.0.zip)
+
 ---
 
 ## ⚡ Usage
