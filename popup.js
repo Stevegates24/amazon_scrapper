@@ -97,6 +97,7 @@ document.getElementById("scrapeBtn").addEventListener("click", async () => {
     setField("f-brand", data.brand);
 
     document.getElementById("copyBtns").style.display = "flex";
+    document.getElementById("copyAllRow").style.display = "block";
     setStatus("✅ Done! Use the copy buttons below.", "success");
   });
 });
@@ -114,4 +115,17 @@ document.getElementById("copyBrand").addEventListener("click", async () => {
   await copyText(scrapedData.brand || "Brand NA");
   flashBtn("copyBrand", "Copied!");
   setStatus("Click the Brand cell in Excel → Ctrl+V", "success");
+});
+
+document.getElementById("copyAll").addEventListener("click", async () => {
+  if (!scrapedData) return;
+  // Tab-separated: ASIN \t Price \t Brand — pastes into 3 consecutive cells
+  const row = [
+    scrapedData.asin  || "",
+    scrapedData.price || "",
+    scrapedData.brand || "Brand NA",
+  ].join("\t");
+  await copyText(row);
+  flashBtn("copyAll", "All Copied!");
+  setStatus("Click ASIN cell → Ctrl+V (fills 3 cells)", "success");
 });
