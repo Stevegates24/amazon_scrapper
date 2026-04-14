@@ -243,6 +243,19 @@
     .dark .copy-btn:hover { background: #2a3f80; border-color: #2a3f80; color: white; }
     .dark .copy-btn.flashed { background: #166534; border-color: #166534; }
 
+    /* ── Copy All button ── */
+    .copy-all-btn {
+      width: 100%;
+      background: linear-gradient(135deg, #1a3a8f, #1e4db7);
+      color: white !important;
+      border-color: transparent !important;
+      letter-spacing: 0.2px;
+    }
+    .copy-all-btn:hover { opacity: 0.88; background: linear-gradient(135deg, #183678, #1a3a8f) !important; color: white !important; }
+    .copy-all-btn.flashed { background: #1a6e45 !important; border-color: transparent !important; }
+    .dark .copy-all-btn { background: linear-gradient(135deg, #1e2d60, #243580); }
+    .dark .copy-all-btn.flashed { background: #166534 !important; }
+
     /* ── Status ── */
     .status {
       margin-top: 9px;
@@ -331,6 +344,10 @@
     <div class="copy-row" id="copyBtns">
       <button class="copy-btn" id="copyAsinPrice">📋 ASIN + Price</button>
       <button class="copy-btn" id="copyBrand">🏷️ Brand</button>
+    </div>
+
+    <div id="copyAllRow" style="display:none; margin-top:8px;">
+      <button class="copy-btn copy-all-btn" id="copyAll">⚡ Copy All 3 (ASIN · Price · Brand)</button>
     </div>
 
     <div class="status" id="status"></div>
