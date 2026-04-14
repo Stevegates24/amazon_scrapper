@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Amazon Product Scraper",
   "short_name": "AmazonScraper",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Instantly extract ASIN, Price, and Brand from any Amazon product page and copy to clipboard for Excel in one click.",
   "author": "Steve Gates",
   "icons": {
